@@ -1,4 +1,4 @@
-# my-zfs-commands
+zfs-my-commands
 **TLDR;** `docker` creates so many zfs datasets and snapshots that makes the vanilla `zfs` command difficult to operate. this fixes that, somewhat.
 
 ### description
@@ -10,18 +10,22 @@ some helper script for zfs fiesystem
 ### installation
 
 - become root
+- go to `/usr/local/bin`
+  ```
+  cd /usr/local/bin
+  ```
 - clone this repo:
   ```
-  git clone https://github.com/kongkrit/my-zfs-commands
+  git clone https://github.com/kongkrit/zfs-my-commands
   ```
 - make the commands executable
   ```
-  chmod +x my-zfs-commands/scripts/*
+  chmod +x zfs-my-commands/scripts/*
   ```
 - link them to `/usr/local/bin`
   ```
-  ln -fs ${PWD}/my-zfs-commands/scripts/* /usr/local/bin
+  ln -fs /usr/local/bin/zfs-my-commands/scripts/* /usr/local/bin
   ```
 
 ### uninstallation
-- remove all the symlinks from `/usr/local/bin`
+- remove all stuff installed above from `/usr/local/bin`
