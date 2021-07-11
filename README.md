@@ -1,5 +1,11 @@
 # my-zfs-commands
+**TLDR;** `docker` creates so many zfs datasets and snapshots that makes the vanilla `zfs` command difficult to operate. this fixes that, somewhat.
+
+### description
+
 some helper script for zfs fiesystem
+- `zfs-list` lists zfs datasets excluding anything that has the word `docker` in it
+- `zfs-list-snapshot` lists zfs snapshots excluding anything that has the word `docker` in it. 
 
 ### installation
 
@@ -16,3 +22,6 @@ some helper script for zfs fiesystem
   ```
   ln -fs ${PWD}/my-zfs-commands/scripts/* /usr/local/bin
   ```
+
+### uninstallation
+- remove all the symlinks from `/usr/local/bin`
