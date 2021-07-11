@@ -8,7 +8,11 @@ some helper script for zfs fiesystem
   ```
   git clone https://github.com/kongkrit/my-zfs-commands
   ```
-- go into the directory with `zfs-*` files and execute
+- make the commands executable
   ```
-  ln -fs ${PWD}/* /usr/local/bin
+  chmod +x my-zfs-commands/scripts/*
+  ```
+- link them to `/usr/local/bin`
+  ```
+  ln -fs ${PWD}/my-zfs-commands/scripts/* /usr/local/bin
   ```
