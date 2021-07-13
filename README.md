@@ -6,6 +6,7 @@ zfs-my-commands
 some helper script for zfs fiesystem
 - `zfs-list` lists zfs datasets excluding anything that has the word `docker` in it
 - `zfs-list-snapshot` lists zfs snapshots excluding anything that has the word `docker` in it. 
+- `zfs-list-snapshot-creation` similar to `zfs-list-snapshot`, except listing snapshot creation time.
 
 ### installation
 
