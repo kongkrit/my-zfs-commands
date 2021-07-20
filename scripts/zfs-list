@@ -1,3 +1,3 @@
 #!/bin/bash
 
-zfs list $(zfs list | sed '/NAME/d;/docker/d' | sed -E 's/^(\S+).*/\1/g') $@
+zfs list $(zfs list | sed -E '/^NAME\s+/d;/\/var\/lib\/docker\//d' | sed -E 's/^(\S+).*/\1/g') $@
